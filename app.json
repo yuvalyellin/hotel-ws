@@ -1,0 +1,17 @@
+{
+  "name": "Upstay app",
+  "description": "home task for upstay",
+  "image": "heroku/python",
+  "repository": "https://github.com/yuvalyellin/hotel-ws.git",
+  "keywords": ["python" ],
+  "addons": [ "heroku-postgresql" ],
+
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
