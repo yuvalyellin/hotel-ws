@@ -15,6 +15,7 @@ reservation inserted to db, then verify nothing is broken (rooms available becam
 
 
 ## DB
+create_db.py creates tables and initial data
 
 3 tables: 
 hotels -> id(generated) + name\
